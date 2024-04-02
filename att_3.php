@@ -14,4 +14,4 @@ if contador > 0:
     print("A média dos valores positivos é:", media)
 else:
     print("Nenhum número positivo foi colocado.")
-
+        ?>
