@@ -16,4 +16,4 @@ if ($contador > 0) {
     print("Nenhum número positivo foi colocado.");
     }
 
-        ?>
+?>
