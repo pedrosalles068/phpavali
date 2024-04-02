@@ -19,3 +19,4 @@ if ($contador > 0) {
     echo "Nenhum número positivo foi colocado.";
 }
 ?>
+
