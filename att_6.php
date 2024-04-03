@@ -1,21 +1,21 @@
 <?php
-function bubbleSort($array)
+function bubbleSort($arr)
 {
-    $n = count($array);
+    $n = count($arr);
     for ($i = 0; $i < $n - 1; $i++) {
-        for ($j = 0; $j < $n - $i - 1; $j++) {
-            if ($array[$j] > $array[$j + 1]) {
-                $temp = $array[$j];
-$array[$j] = $array[$j + 1];
-$array[$j + 1] = $temp;
+        for ($obs = 0; $obs < $n - $i - 1; $obs++) {
+            if ($arr[$obs] > $arr[$obs + 1]) {
+                $tempo = $arr[$obs];
+$arr[$obs] = $arr[$obs + 1];
+$arr[$obs + 1] = $tempo;
 }}}
-return $array;
+return $arr;
 }
-$array = [64, 34, 25, 12, 22, 11, 90];
+$arr = [64, 34, 25, 12, 22, 11, 90];
 echo "Original: ";
-print_r($array);
+print_r($arr);
 
 echo "Ordenado com BubbleSort: ";
-$sortedArray = bubbleSort($array);
-print_r($sortedArray);
+$sortedArr = bubbleSort($arr);
+print_r($sortedArr);
 ?>
