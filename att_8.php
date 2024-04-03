@@ -1,7 +1,6 @@
 <?php
 function vacaquefala($mensagem) {
     $vaca = "
-    $mensagem
      ________________________________________
     /                                         \
      $mensagem        
