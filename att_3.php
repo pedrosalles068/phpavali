@@ -2,13 +2,13 @@
 $soma = 0;
 $cont = 0;
 
-echo "Escreva um número int negativo: ";
+echo "Escreva um número inteiro negativo: ";
 $num = intval(fgets(STDIN));
 
 while ($num >= 0) {
     $soma += $num;
     $cont += 1;
-    echo "Escreva um número int para acabar: ";
+    echo "Escreva um número inteiro para acabar: ";
     $num = intval(fgets(STDIN));
 }
 
