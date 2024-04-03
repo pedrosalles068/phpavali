@@ -1,21 +1,22 @@
 <?php
 $soma = 0;
-$contador = 0;
+$cont = 0;
 
-echo "Escreva um número inteiro (negativo para terminar): ";
-$numero = intval(fgets(STDIN)); // A função input não existe em PHP, estamos usando fgets(STDIN) para ler do console
+echo "Escreva um número inteiro negativo: ";
+$num = intval(fgets(STDIN));
 
-while ($numero >= 0) {
-    $soma += $numero;
-    $contador += 1;
-    echo "Escreva um número inteiro (negativo para terminar): ";
-    $numero = intval(fgets(STDIN));
+while ($num >= 0) {
+    $soma += $num;
+    $cont += 1;
+    echo "Escreva um número inteiro para acabar: ";
+    $num = intval(fgets(STDIN));
 }
 
-if ($contador > 0) {
-    $media = $soma / $contador;
-    echo "A média dos valores positivos é: $media";
+if ($cont > 0) {
+    $media = $soma / $cont;
+    echo "A média é: $media";
 } else {
-    echo "Nenhum número positivo foi colocado.";
+    echo "Nenhum número foi colocado.";
 }
 ?>
+
